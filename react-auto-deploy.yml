@@ -13,7 +13,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -38,4 +38,4 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./build http://bootcamp_session2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build http://kaput-train.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
